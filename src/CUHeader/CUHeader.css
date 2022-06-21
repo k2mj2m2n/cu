@@ -1,0 +1,191 @@
+.CuHead{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
+}
+
+.login_menu {
+  text-align: right;
+  height: 36px;
+  width: 100%;
+}
+
+.login_menu ul {
+    position: absolute;
+    right: 0px;
+    padding-right: 20px;
+}
+
+.login_menu li {
+    float: left;
+    position: relative;
+    list-style: none;
+}
+
+.login_menu li a{
+    font-size: 14px;
+    padding: 0 10px;
+    color: #555;
+    font-weight: 400;
+    text-align: center;
+}
+
+.login_menu li~li::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 6px);
+    width: 1px;
+    height: 12px;
+    background: #555555;
+}
+.login_menu li a:hover{
+    text-decoration: underline;
+}
+
+.inner_wrap{
+    width: 1860px;
+    height: 104px;
+    padding: 0 30px;
+}
+
+.logo{
+    position: absolute;
+    left: 30px;
+}
+.gnb{
+    position: absolute;
+    width: 1000px;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.gnb li{
+    position: relative;
+    float: left;
+    list-style: none;
+    width: 150px;
+}
+
+.gnb li a{
+    position: relative;
+    display: block;
+    padding: 38px 0 37px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.gnb li a:hover{
+    color: #37d243;
+}
+
+.gnb li:hover ul{
+    display: block;
+}
+.sub_depth{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+    width: inherit;
+    padding: 25px 20px 25px;
+    background: #37d243;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.sub_depth li a{
+    left: -5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.78;
+    letter-spacing: -0.72px;
+    white-space: nowrap;
+    text-align: left;
+    padding: 0;
+}
+
+.sub_depth li a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.language{
+    position: absolute;
+    padding: 38px 0 38px;
+    right: 50px;
+    margin-right: 20px;
+}
+.language a{
+    float: right;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.language a::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 5px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #000;
+}
+
+.language ul {
+    display: none;
+    position: absolute;
+    top: 31px;
+    left: calc(50% - 30px);
+    width: 60px;
+    padding: 20px 0;
+    background: #000000;
+    border-radius: 16px;
+}
+
+.language ul li{
+    list-style: none;
+}
+
+.language ul li a {
+    display: block;
+    color: #999;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.375;
+    letter-spacing: -0.64px;
+}
+
+.language a:visited ul{
+    display: block;
+}
+
+.toggle_menu{
+    height: 30px;
+    position: absolute;
+    margin: auto 0;
+    top: 50%;
+    right: 30px;
+}
+
+.toggle_menu a{
+    float: right;
+}
